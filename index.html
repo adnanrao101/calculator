@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Style Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display">
+      <div id="expression">0</div>
+    </div>
+    <div class="buttons">
+      <button class="gray" onclick="clearDisplay()">AC</button>
+      <button class="gray" onclick="appendOperator('%')">%</button>
+      <button class="gray" onclick="invert()">±</button>
+      <button class="orange" onclick="appendOperator('/')">÷</button>
+
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button class="orange" onclick="appendOperator('*')">×</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button class="orange" onclick="appendOperator('-')">−</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button class="orange" onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendNumber('0')" class="zero">0</button>
+      <button onclick="appendDot()">.</button>
+      <button class="orange" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
@@ -16,47 +64,35 @@
 
 
         <div class="buttons">
-            <button class="gray">AC</button>
-            <button class="gray">%</button>
-            <button class="gray">±</button>
-            <button class="orange">÷</button>
+            <button class="gray" onclick="clearDisplay()">AC</button>
+            <button class="gray" onclick="appendOperator('%')">%</button>
+            <button class="gray" onclick="invert()">±</button>
+            <button class="orange" onclick="appendOperator('/')">÷</button>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="orange">x</button> 
+            <button onclick="appendnumber('7')">7</button>
+            <button onclick="appendnumber('8')">8</button>
+            <button onclick="appendnumber('9')">9</button>
+            <button class="orange" onclick="appendOperator('*')">x</button> 
 
-            <button>4</button>            
-            <button>5</button>            
-            <button>6</button>            
-            <button class="orange">-</button>
+            <button onclick="appendnumber('4')">4</button>            
+            <button onclick="appendnumber('5')">5</button>            
+            <button onclick="appendnumber('6')">6</button>            
+            <button class="orange" onclick="appendOperator('-')">-</button>
 
-            <button>1</button>            
-            <button>2</button>            
-            <button>3</button>            
-            <button class="orange">+</button>  
+            <button onclick="appendnumber('1')">1</button>            
+            <button onclick="appendnumber('2')">2</button>            
+            <button onclick="appendnumber('3')">3</button>            
+            <button class="orange" onclick="appendOperator('+')">+</button>  
 
-            <button>0</button>            
-            <button>.</button>            
-            <button class="orange">=</button>
-
+            <button onclick="appendnumber('0')">0</button>            
+            <button onclick="appendDot()">.</button>            
+            <button class="orange" onclick="calculate()">=</button>
         </div>
 
-        <script src="script.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+
+
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> -->
