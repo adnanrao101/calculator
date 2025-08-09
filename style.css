@@ -15,12 +15,12 @@ body {
 }
 
 .display {
-    background-color: black;
+    background-color: rgb(116, 114, 114);
     color: white;
     text-align: right;
     padding: 30px 10px 20px;
     font-size: 2.5rem;
-    height: 100px;
+    height: 30px;
 }
 
 .buttons {
